@@ -1,0 +1,21 @@
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+
+public class MediaDeDoisNumerosTest {
+    
+    @Test
+    public void testMediaDeDoisNumerosComEntradaInvalida() {
+        String input = "abc\n20\n"; // Simula a entrada do usuário com letras
+        
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+        
+        MediaDeDoisNumeros.main(new String[0]);
+        
+        // Verifica se a saída contém a mensagem de erro
+        assertEquals("Erro ao ler entrada do usuário: For input string: \"abc\"\n", outContent.toString());
+    }
+}
