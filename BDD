@@ -1,0 +1,18 @@
+Arquivo: MediaDeDoisNumeros.java
+Funcionalidade: Calcular a média de dois números
+Esta funcionalidade permite ao usuário inserir dois números e calcular sua média.
+
+Cenário 1: Calcular a média de dois números válidos
+Dado que o usuário inseriu os números "10" e "20"
+Quando o usuário executa o programa
+Então o programa exibe a mensagem "A média dos dois números é: 15.0"
+Entrada	Saída
+O usuário insere "10" e "20"	O programa exibe "A média dos dois números é: 15.0"
+
+Cenário 2: Lidar com entrada inválida
+Dado que o usuário inseriu os números "abc" e "20"
+Quando o usuário executa o programa
+Então o programa exibe a mensagem de erro "Erro ao ler entrada do usuário: For input string: "abc""
+Entrada	Saída
+O usuário insere "abc" e "20"	O programa exibe a mensagem de erro "Erro ao ler entrada do usuário: For input string: "abc"".
+
