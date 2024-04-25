@@ -1,0 +1,21 @@
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+
+public class MediaDeDoisNumerosTest {
+    
+    @Test
+    public void testMediaDeDoisNumeros() {
+        String input = "10\n20\n"; // Simula a entrada do usuário
+        
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+        
+        MediaDeDoisNumeros.main(new String[0]);
+        
+        // Verifica se a saída é igual ao esperado
+        assertEquals("A média dos dois números é: 15.0\n", outContent.toString());
+    }
+}
